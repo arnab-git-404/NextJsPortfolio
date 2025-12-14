@@ -1,123 +1,155 @@
 [
   {
     "id": "1",
-    "title": "E-Commerce Platform",
-    "description": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment integration using Stripe.",
+    "title": "DocsPlus (Private Repository)",
+    "description": "A full-stack Office document management system that allows Admin(HR) to create, edit, share, and collaborate on documents in real-time. It features role based authentication, version control.",
     "technologies": [
+      "NextJs",
       "React",
       "Node.js",
       "Express",
       "MongoDB",
-      "Stripe",
-      "Redux"
+      "nodemailer",
+      "Shadcn UI"
     ],
-    "image": "/projects/ecommerce.jpg",
-    "github": "https://github.com/yourusername/ecommerce",
-    "live": "https://ecommerce-demo.com",
+    "images": [
+      "/projects/docsplus/docsplus.png",
+      "/projects/docsplus/docsplus1.png",
+      "/projects/docsplus/docsplus2.png"
+    ],
+
+    "github": "https://github.com/arnab-git-404/DocsPlus",
+    "live": "https://docsplus.vercel.app/",
     "category": "personal",
     "featured": true
   },
   {
     "id": "2",
-    "title": "Task Management App",
-    "description": "A collaborative task management application with real-time updates, team collaboration features, and drag-and-drop functionality.",
+    "title": "DegreeNFT",
+    "description": "DegreeNFT leverages blockchain technology to create tamper-proof digital academic credentials. Educational institutions can issue degrees as NFTs, providing graduates with verifiable, portable proof of their qualifications that can be easily shared with employers or other institutions.",
     "technologies": [
       "React",
       "Node.js",
-      "Socket.io",
-      "MongoDB",
-      "Material-UI"
+      "MetaPlex",
+      "Solana Blockchain",
+      "MongoDB"
     ],
-    "image": "/projects/taskmanager.jpg",
-    "github": "https://github.com/yourusername/taskmanager",
-    "live": "https://taskmanager-demo.com",
+    "images": ["/projects/degreeNFT/degreenft.png",
+      "/projects/degreeNFT/degreenft1.png",
+      "/projects/degreeNFT/degreenft2.png",
+      "/projects/degreeNFT/degreenft3.jpg"
+  ],
+    "github": "https://github.com/arnab-git-404/DegreeNFT",
+    "live": "https://degree-nft.vercel.app/",
     "category": "personal",
     "featured": true
   },
   {
     "id": "3",
-    "title": "Social Media Dashboard",
-    "description": "Analytics dashboard for social media metrics with data visualization, real-time updates, and export functionality.",
+    "title": "PassVault",
+    "description": "PassVault is a secure, client-side encrypted password manager designed to protect your digital identity. It provides a robust and user-friendly interface for storing, generating, and managing your passwords, with a strong emphasis on security and user privacy. All encryption and decryption operations happen locally on your device, ensuring that your unencrypted data, including your master password, is never sent to our servers.",
     "technologies": [
       "React",
       "Node.js",
       "Express",
+      "AES-256-GCM & PBKDF2",
       "MongoDB",
-      "Chart.js",
+      "Redis",
       "Tailwind CSS"
     ],
-    "image": "/projects/dashboard.jpg",
-    "github": "https://github.com/yourusername/dashboard",
-    "live": "https://dashboard-demo.com",
-    "category": "client",
+    "images": [
+      "/projects/passvault/passvaul0t.jpg",
+      "/projects/passvault/passvault1.jpg",
+      "/projects/passvault/passvault2.jpg",
+      "/projects/passvault/passvault3.jpg"
+    ],
+    "github": "https://github.com/arnab-git-404/PassVault-Frontend",
+    "live": "https://pass-vault-frontend.vercel.app/",
+    "category": "personal",
     "featured": false
   },
   {
     "id": "4",
-    "title": "Real-time Chat Application",
-    "description": "A real-time chat application with private messaging, group chats, and file sharing capabilities.",
-    "technologies": [
-      "React",
-      "Node.js",
-      "Socket.io",
-      "MongoDB",
-      "Express"
+    "title": "Heritage Repository",
+    "description": "Heritage Repository is a fullstack web application designed to safeguard living heritage through ethical documentation and tiered access control. The platform enables communities to document, verify, and share Folk Songs, Folk Dances, Folk Tales, Rituals, Material Culture.",
+    "technologies": ["React", "Node.js", "nodemailer", "MongoDB", "Express"],
+    "images": [
+      "/projects/heritage-repository/heritage-repository.jpg",
+      "/projects/heritage-repository/heritage-repository1.jpg",
+      "/projects/heritage-repository/heritage-repository2.jpg",
+      "/projects/heritage-repository/heritage-repository3.jpg"
     ],
-    "image": "/projects/chat.jpg",
-    "github": "https://github.com/yourusername/chat",
-    "live": "https://chat-demo.com",
-    "category": "personal",
-    "featured": false
+    "github": "https://github.com/arnab-git-404/heritage-repository",
+    "live": "https://heritage-repository.vercel.app",
+    "category": "client",
+    "featured": true
   },
   {
     "id": "5",
-    "title": "Portfolio Website Builder",
-    "description": "A drag-and-drop portfolio website builder with customizable templates and themes.",
-    "technologies": [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "Tailwind CSS"
+    "title": "Diet Plans",
+    "description": "A web application developed for Shoppurezen that enables administrators to create and manage customizable diet plans. Features admin controls for adding and deleting plans, with intelligent user data collection during downloads to support personalized health-based sales strategies.",
+    "technologies": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    "images": [
+      "/projects/dietplans/dietplans.jpg",
+      "/projects/dietplans/dietplans1.jpg",
+      "/projects/dietplans/dietplans2.jpg",
+      "/projects/dietplans/dietplans3.jpg"
     ],
-    "image": "/projects/portfolio-builder.jpg",
-    "github": "https://github.com/yourusername/portfolio-builder",
-    "live": "https://portfolio-builder-demo.com",
-    "category": "personal",
+    "github": "https://github.com/arnab-git-404/diet-plans",
+    "production": "https://dietplans.shoppurezen.com",
+    "live": "",
+    "category": "client",
     "featured": true
   },
   {
     "id": "6",
-    "title": "Expense Tracker",
-    "description": "A comprehensive expense tracking application with budget management and financial reports.",
-    "technologies": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Chart.js"
+    "title": "Aam Panna Creations",
+    "description": "I created this website during my internship to present the company’s services and values with a clean, user-friendly, and responsive design. The project enhanced my web development and design skills while delivering a professional online presence for the company.",
+    "technologies": ["React", "NextJs", "Tailwind CSS"],
+    "images": [
+      "/projects/aampanna/aampanna.jpg",
+      "/projects/aampanna/aampanna1.jpg",
+      "/projects/aampanna/aampanna2.jpg",
+      "/projects/aampanna/aampanna3.jpg"
     ],
-    "image": "/projects/expense-tracker.jpg",
-    "github": "https://github.com/yourusername/expense-tracker",
-    "live": "https://expense-tracker-demo.com",
-    "category": "personal",
-    "featured": false
+    "github": "https://github.com/arnab-git-404/aam-panna-creations",
+    "production": "https://www.aampanna.net/",
+    "live": "",
+    "category": "production",
+    "featured": true
   },
   {
     "id": "7",
-    "title": "Blog Platform",
-    "description": "A full-featured blog platform with markdown support, comments, and user authentication.",
-    "technologies": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Redux"
+    "title": "Lagum Advisors",
+    "description": "A responsive, multi-page business website designed for a legal advisory firm. Features include a structured service catalog (IPR, SEBI, Taxation), a dynamic FAQ section, and an optimized user interface that builds professional credibility and drives client inquiries.",
+    "technologies": ["React", "Node.js", "Tailwind CSS"],
+    "images": [
+      "/projects/lagumadvisors/lagumadvisors.jpg",
+      "/projects/lagumadvisors/lagumadvisors1.jpg",
+      "/projects/lagumadvisors/lagumadvisors2.jpg",
+      "/projects/lagumadvisors/lagumadvisors3.jpg"
     ],
-    "image": "/projects/blog.jpg",
-    "github": "https://github.com/yourusername/blog",
-    "live": "https://blog-demo.com",
+    "github": "https://github.com/arnab-git-404/Lagum-Advisors",
+    "production": "https://www.lagumadvisors.com/",
+    "live": "",
     "category": "client",
-    "featured": false
+    "featured": true
+  },
+  {
+    "id": "8",
+    "title": "Claylab Education",
+    "description": "A dedicated platform for a non-profit foundation reimagining education for underserved teenagers in India. The website connects students with 1:1 mentorship programs and entrepreneurial training to build life skills and employability. It features a structured mentorship framework, impact reporting, and partnership opportunities to bridge the gap between school and the professional world.",
+    "technologies": ["React", "NextJs", "Node.js", "Tailwind CSS"],
+    "images": [
+      "/projects/claylab/claylab.jpg",
+      "/projects/claylab/claylab1.jpg",
+      "/projects/claylab/claylab2.jpg",
+      "/projects/claylab/claylab3.jpg"
+    ],
+    "github": "https://github.com/arnab-git-404/claylab",
+    "production": "https://www.claylab.education/",
+    "live": "",
+    "category": "production",
+    "featured": true
   }
 ]
