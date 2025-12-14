@@ -409,14 +409,14 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.3 }}
         className={`
-          md:hidden fixed top-0 left-0 right-0 z-50
+          md:hidden fixed top-4 left-0 right-0 z-50
           transition-all duration-300
           ${
             scrolled
               ? "glass-strong shadow-lg backdrop-blur-xl"
               : "bg-background/80 backdrop-blur-sm"
           }
-          border-b border-border/50 rounded-4xl
+          border border-border/50 rounded-4xl
         `}
       >
         <div className="max-w-7xl mx-auto px-4">
