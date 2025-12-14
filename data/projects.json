@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1",
+    "title": "E-Commerce Platform",
+    "description": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment integration using Stripe.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Stripe",
+      "Redux"
+    ],
+    "image": "/projects/ecommerce.jpg",
+    "github": "https://github.com/yourusername/ecommerce",
+    "live": "https://ecommerce-demo.com",
+    "category": "personal",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, team collaboration features, and drag-and-drop functionality.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "MongoDB",
+      "Material-UI"
+    ],
+    "image": "/projects/taskmanager.jpg",
+    "github": "https://github.com/yourusername/taskmanager",
+    "live": "https://taskmanager-demo.com",
+    "category": "personal",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": "Social Media Dashboard",
+    "description": "Analytics dashboard for social media metrics with data visualization, real-time updates, and export functionality.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Chart.js",
+      "Tailwind CSS"
+    ],
+    "image": "/projects/dashboard.jpg",
+    "github": "https://github.com/yourusername/dashboard",
+    "live": "https://dashboard-demo.com",
+    "category": "client",
+    "featured": false
+  },
+  {
+    "id": "4",
+    "title": "Real-time Chat Application",
+    "description": "A real-time chat application with private messaging, group chats, and file sharing capabilities.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "MongoDB",
+      "Express"
+    ],
+    "image": "/projects/chat.jpg",
+    "github": "https://github.com/yourusername/chat",
+    "live": "https://chat-demo.com",
+    "category": "personal",
+    "featured": false
+  },
+  {
+    "id": "5",
+    "title": "Portfolio Website Builder",
+    "description": "A drag-and-drop portfolio website builder with customizable templates and themes.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Tailwind CSS"
+    ],
+    "image": "/projects/portfolio-builder.jpg",
+    "github": "https://github.com/yourusername/portfolio-builder",
+    "live": "https://portfolio-builder-demo.com",
+    "category": "personal",
+    "featured": true
+  },
+  {
+    "id": "6",
+    "title": "Expense Tracker",
+    "description": "A comprehensive expense tracking application with budget management and financial reports.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Chart.js"
+    ],
+    "image": "/projects/expense-tracker.jpg",
+    "github": "https://github.com/yourusername/expense-tracker",
+    "live": "https://expense-tracker-demo.com",
+    "category": "personal",
+    "featured": false
+  },
+  {
+    "id": "7",
+    "title": "Blog Platform",
+    "description": "A full-featured blog platform with markdown support, comments, and user authentication.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redux"
+    ],
+    "image": "/projects/blog.jpg",
+    "github": "https://github.com/yourusername/blog",
+    "live": "https://blog-demo.com",
+    "category": "client",
+    "featured": false
+  }
+]

@@ -1,0 +1,78 @@
+
+
+[
+  {
+    "id": 1,
+    "type": "internship",
+    "role": "Full Stack Developer Intern",
+    "company": "Tech Company Inc.",
+    "location": "Remote",
+    "duration": "Jan 2024 - Present",
+    "description": "Developing and maintaining web applications using MERN stack, collaborating with cross-functional teams to deliver high-quality products.",
+    "technologies": ["React", "Node.js", "MongoDB", "Express.js", "TypeScript", "Tailwind CSS"],
+    "achievements": [
+      "Built 5+ production-ready web applications",
+      "Reduced page load time by 40% through optimization",
+      "Implemented responsive designs across all projects"
+    ],
+    "projects": [
+      {
+        "name": "E-Commerce Platform",
+        "description": "Full-featured online shopping platform with payment integration",
+        "url": "https://example.com"
+      },
+      {
+        "name": "Social Media Dashboard",
+        "description": "Analytics dashboard for social media management",
+        "url": "https://example.com"
+      },
+      {
+        "name": "Learning Management System",
+        "description": "Online education platform with course management",
+        "url": "https://example.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "client",
+    "role": "Freelance Web Developer",
+    "company": "Various Clients",
+    "duration": "2023 - Present",
+    "description": "Delivered custom web solutions for small businesses and startups, focusing on responsive design and user experience.",
+    "technologies": ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    "achievements": [
+      "Completed 10+ client projects with 100% satisfaction rate",
+      "Increased client website traffic by average of 60%",
+      "Delivered all projects on time and within budget"
+    ]
+  },
+  {
+    "id": 3,
+    "type": "client",
+    "role": "Freelance Web Developer",
+    "company": "Various Clients",
+    "duration": "2023 - Present",
+    "description": "Delivered custom web solutions for small businesses and startups, focusing on responsive design and user experience.",
+    "technologies": ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    "achievements": [
+      "Completed 10+ client projects with 100% satisfaction rate",
+      "Increased client website traffic by average of 60%",
+      "Delivered all projects on time and within budget"
+    ]
+  },
+  {
+    "id": 4,
+    "type": "client",
+    "role": "Freelance Web Developer",
+    "company": "Various Clients",
+    "duration": "2023 - Present",
+    "description": "Delivered custom web solutions for small businesses and startups, focusing on responsive design and user experience.",
+    "technologies": ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    "achievements": [
+      "Completed 10+ client projects with 100% satisfaction rate",
+      "Increased client website traffic by average of 60%",
+      "Delivered all projects on time and within budget"
+    ]
+  }
+]

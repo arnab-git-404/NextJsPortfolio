@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "institution": "University Name",
+        "degree": "Bachelor of Technology",
+        "field": "Computer Science and Engineering",
+        "duration": "2021 - 2025",
+        "description": "Focused on software development, data structures, algorithms, and web technologies.",
+        "achievements": [
+            "CGPA: 8.5/10",
+            "Relevant Coursework: Web Development, Database Management, Data Structures, Algorithms",
+            "Member of Coding Club and participated in multiple hackathons"
+        ]
+    },
+    {
+        "id": "2",
+        "institution": "Online Learning Platform",
+        "degree": "Full Stack Web Development",
+        "field": "MERN Stack Specialization",
+        "duration": "2023",
+        "description": "Comprehensive course covering MongoDB, Express.js, React, and Node.js with hands-on projects.",
+        "achievements": [
+            "Completed 10+ projects including e-commerce, social media, and task management apps",
+            "Earned certification with distinction",
+            "Built portfolio of production-ready applications"
+        ]
+    }
+]
