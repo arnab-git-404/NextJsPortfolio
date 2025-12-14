@@ -1095,7 +1095,7 @@ export default function Projects() {
 
         {/* Grid */}
         {currentProjects.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-12">
             {currentProjects.map((project) => (
               <Card
                 key={project.id}
