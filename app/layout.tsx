@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navigation/navbar";
-import { ReactLenis, useLenis } from 'lenis/react'
+import { ReactLenis, useLenis } from "lenis/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,20 +37,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      style={{ scrollBehavior: "smooth" }}
+    >
+      <body
+        className={`${inter.variable} font-sans antialiased`}
+        style={{
+          overflowX: "hidden",
+          willChange: "scroll-position",
+        }}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <ReactLenis root  
-          
-          
-            />
-            <Navbar />
-            {children} 
+          <ReactLenis root />
+          <Navbar />
+          {children}
         </ThemeProvider>
       </body>
     </html>
