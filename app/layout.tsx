@@ -56,7 +56,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ReactLenis root />
+          {/* <ReactLenis root /> */}
           <Analytics/>
           <Navbar />
           {children}
