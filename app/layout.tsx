@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navigation/navbar";
 import { ReactLenis, useLenis } from "lenis/react";
+import { Analytics } from "@vercel/analytics/next"
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,6 +58,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ReactLenis root />
+          <Analytics/>
           <Navbar />
           {children}
         </ThemeProvider>
