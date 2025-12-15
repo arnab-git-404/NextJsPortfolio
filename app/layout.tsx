@@ -6,7 +6,6 @@ import Navbar from "@/components/navigation/navbar";
 import { ReactLenis, useLenis } from "lenis/react";
 import { Analytics } from "@vercel/analytics/next"
 
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
