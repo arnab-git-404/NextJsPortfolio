@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FloatingLines from "@/components/FloatingLines";
+import ShinyText from "@/components/ShinyText";
+
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -53,8 +55,15 @@ export default function Hero() {
             viewport={{ once: true }}
             className="text-5xl md:text-7xl font-bold mb-4 text-primary"
           >
+            
+  
             Arnab Mukherjee
+            
           </motion.h1>
+
+
+
+
 
           {/* Role/Title */}
           <motion.h2
