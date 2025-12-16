@@ -100,6 +100,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
                     className="max-w-4xl mx-auto"
         >
           {/* Section heading */}
@@ -126,6 +127,7 @@ export default function Contact() {
               initial={{ opacity: 0, x: -50 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.2 }}
+                            viewport={{ once: true }}
                             className="relative space-y-8"
             >
               <div>

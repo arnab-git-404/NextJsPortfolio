@@ -37,6 +37,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="mb-4"
           >
             <span className="text-primary text-lg font-medium">
@@ -49,6 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
             className="text-5xl md:text-7xl font-bold mb-4 text-primary"
           >
             Arnab Mukherjee
@@ -59,6 +61,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
             className="text-2xl md:text-4xl font-semibold mb-6 text-muted-foreground"
           >
             MERN Stack Developer
@@ -68,6 +71,7 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
@@ -81,12 +85,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
             className="flex flex-wrap gap-4 justify-center mb-12"
           >
             <Button
               size="lg"
               onClick={() => scrollToSection("projects")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground transition-smooth"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground transition-smooth hover:scale-110 hover:cursor-pointer "
             >
               View My Work
             </Button>
@@ -94,7 +99,7 @@ export default function Hero() {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("contact")}
-              className="border-primary/50 hover:bg-primary/10 transition-smooth"
+              className="border-primary/50 hover:bg-primary/10 transition-smooth hover:scale-110 hover:cursor-pointer"
             >
               Get In Touch
             </Button>
@@ -105,10 +110,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
             className="flex gap-4 justify-center"
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/arnab-git-404"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover:glass-strong transition-smooth hover:scale-110"
@@ -116,7 +122,7 @@ export default function Hero() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/0xarnab"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover:glass-strong transition-smooth hover:scale-110"
@@ -124,7 +130,7 @@ export default function Hero() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:mukherjeearnab988@gmail.com"
               className="p-3 rounded-full glass hover:glass-strong transition-smooth hover:scale-110"
             >
               <Mail className="w-6 h-6" />
@@ -138,11 +144,13 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
+        viewport={{ once: true }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
+          viewport={{ once: true }}
           className="cursor-pointer"
           onClick={() => scrollToSection("about")}
         >

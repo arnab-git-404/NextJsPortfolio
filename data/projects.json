@@ -81,7 +81,7 @@
     ],
     "github": "https://github.com/arnab-git-404/heritage-repository",
     "live": "https://heritage-repository.vercel.app",
-    "category": "production",
+    "category": "Client",
     "featured": true
   },
   {
@@ -98,7 +98,7 @@
     "github": "https://github.com/arnab-git-404/diet-plans",
     "production": "https://dietplans.shoppurezen.com",
     "live": "",
-    "category": "production",
+    "category": "Client",
     "featured": true
   },
   {
@@ -115,7 +115,7 @@
     "github": "https://github.com/arnab-git-404/aam-panna-creations",
     "production": "https://www.aampanna.net/",
     "live": "",
-    "category": "production",
+    "category": "Client",
     "featured": true
   },
   {
@@ -132,7 +132,7 @@
     "github": "https://github.com/arnab-git-404/Lagum-Advisors",
     "production": "https://www.lagumadvisors.com/",
     "live": "",
-    "category": "production",
+    "category": "Client",
     "featured": true
   },
   {
@@ -149,7 +149,7 @@
     "github": "https://github.com/arnab-git-404/claylab",
     "production": "https://www.claylab.education/",
     "live": "",
-    "category": "production",
+    "category": "Client",
     "featured": true
   }
 ]

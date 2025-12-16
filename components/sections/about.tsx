@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+
 
 export default function About() {
     const [ref, inView] = useInView({
@@ -17,6 +19,7 @@ export default function About() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
                     className="max-w-4xl mx-auto"
                 >
                     {/* Section heading */}
@@ -33,15 +36,17 @@ export default function About() {
                             initial={{ opacity: 0, x: -50 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.2 }}
+                            viewport={{ once: true }}
                             className="relative"
                         >
-                            <div className="relative w-64 h-64 mx-auto">
-                                <div className="absolute inset-0 bg-gradient-to-r from-primary via-purple-500 to-pink-500 rounded-full animate-spin-slow opacity-75 blur-xl" />
-                                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/50 glass">
-                                    <div className="w-full h-full bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center text-6xl font-bold text-primary">
-                                        YN
-                                    </div>
-                                </div>
+                            <div className="relative w-72 h-72 mx-auto">
+                                <Image
+                                    src="/arnabProfile.png"
+                                    alt="Profile Picture"
+                                    fill
+                                    loading="lazy"
+                                    className="object-cover rounded-full border-4 border-primary shadow-lg"
+                                />
                             </div>
                         </motion.div>
 
@@ -50,6 +55,7 @@ export default function About() {
                             initial={{ opacity: 0, x: 50 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
+                            viewport={{ once: true }}
                             className="space-y-4"
                         >
                             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -64,11 +70,7 @@ export default function About() {
                                 technologies. I'm always eager to learn new technologies and
                                 stay updated with the latest industry trends.
                             </p>
-                            <p className="text-lg text-muted-foreground leading-relaxed">
-                                When I'm not coding, you can find me exploring new frameworks,
-                                contributing to open-source projects, or sharing my knowledge
-                                with the developer community.
-                            </p>
+                    
 
                             {/* Key highlights */}
                             <div className="grid grid-cols-2 gap-4 pt-4">
@@ -77,7 +79,7 @@ export default function About() {
                                     <div className="text-sm text-muted-foreground">Projects Completed</div>
                                 </div>
                                 <div className="glass p-4 rounded-lg">
-                                    <div className="text-3xl font-bold text-primary">2+</div>
+                                    <div className="text-3xl font-bold text-primary">4+</div>
                                     <div className="text-sm text-muted-foreground">Happy Clients</div>
                                 </div>
                             </div>

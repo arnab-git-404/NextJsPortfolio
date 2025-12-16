@@ -111,9 +111,9 @@ export default function Navbar() {
               onClick={() => scrollToSection("home")}
               className="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-primary/10 transition-all group"
             >
-              <Code2 className="w-5 h-5 text-primary group-hover:rotate-12 transition-transform" />
-              <span className="font-bold text-sm hidden lg:inline-block">
-                Portfolio
+              {/* <Code2 className="w-5 h-5 text-primary group-hover:rotate-12 transition-transform" /> */}
+              <span className="font-bold text-md hidden lg:inline-block hover:cursor-pointer hover:rotate-8 transition-transform ">
+                {"<Arnab/>"}
               </span>
             </motion.button>
 
@@ -149,7 +149,7 @@ export default function Navbar() {
                       />
                     )}
                     <Icon className="w-4 h-4 relative z-10" />
-                    <span className="relative z-10 hidden lg:inline-block">
+                    <span className="relative z-10 hidden lg:inline-block hover:cursor-pointer">
                       {item.name}
                     </span>
                   </motion.button>

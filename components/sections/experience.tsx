@@ -314,6 +314,7 @@ export default function Experience() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
                 >
                     {/* Section heading */}
                     <div className="text-center mb-16">
@@ -321,6 +322,7 @@ export default function Experience() {
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={inView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
                             className="inline-block mb-4"
                         >
                             <span className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium">
@@ -342,6 +344,7 @@ export default function Experience() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.5, delay: 0.2 }}
+                            viewport={{ once: true }}
                             className="flex items-center gap-3 mb-10"
                         >
                             <div className="p-3 bg-primary/10 rounded-xl">
@@ -364,6 +367,7 @@ export default function Experience() {
                                         initial={{ opacity: 0, x: -50 }}
                                         animate={inView ? { opacity: 1, x: 0 } : {}}
                                         transition={{ duration: 0.6, delay: index * 0.15 }}
+                                        viewport={{ once: true }}
                                         className="relative"
                                     >
                                         {/* Timeline dot */}
@@ -382,6 +386,7 @@ export default function Experience() {
                                                                 <motion.div
                                                                     initial={{ scale: 0, opacity: 0 }}
                                                                     animate={inView ? { scale: 1, opacity: 1 } : {}}
+                                                                    viewport={{ once: true }}
                                                                     transition={{ delay: index * 0.15 + 0.3, type: "spring", bounce: 0.5 }}
                                                                     className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-full"
                                                                 >
@@ -409,6 +414,7 @@ export default function Experience() {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: -10 }}
                                                         animate={inView ? { opacity: 1, y: 0 } : {}}
+                                                        viewport={{ once: true }}
                                                         transition={{ delay: index * 0.15 + 0.4 }}
                                                         className="mb-4 p-4 bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl"
                                                     >
@@ -446,6 +452,7 @@ export default function Experience() {
                                                     {exp.technologies.map((tech, i) => (
                                                         <motion.span
                                                             key={i}
+                                                            viewport={{ once: true }}
                                                             initial={{ opacity: 0, scale: 0.8 }}
                                                             animate={inView ? { opacity: 1, scale: 1 } : {}}
                                                             transition={{ delay: index * 0.1 + i * 0.05 }}

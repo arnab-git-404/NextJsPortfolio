@@ -668,6 +668,7 @@ function ImageModal({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      viewport={{ once: true }}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
       onClick={onClose}
     >
@@ -768,6 +769,7 @@ function ProjectCard({ project }: { project: any }) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
               className="absolute inset-0"
             >
               {images[currentImageIndex] ? (
@@ -951,6 +953,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
           {/* ...existing heading and filters... */}
           <div className="text-center mb-12">
@@ -958,6 +961,7 @@ export default function Projects() {
               initial={{ opacity: 0, scale: 0.5 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
               className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium"
             >
               Portfolio
@@ -977,6 +981,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
               className="max-w-2xl mx-auto relative"
             >
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -1003,6 +1008,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
               className="flex flex-wrap justify-center gap-3"
             >
               {categories.map((category) => (
@@ -1025,6 +1031,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
             >
               <p className="text-sm text-muted-foreground text-center mb-3">
                 Filter by Technology

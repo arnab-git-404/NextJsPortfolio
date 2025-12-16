@@ -5,7 +5,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Calendar } from "lucide-react";
+import { GraduationCap, Calendar, Building2, LineSquiggle , BookUser} from "lucide-react";
 import educationData from "@/data/education.json";
 
 const container = {
@@ -49,6 +49,7 @@ export default function Education() {
             {educationData.map((edu) => (
               <motion.div
                 key={edu.id}
+                viewport={{ once: true }}
                 // variants={item}
                 className="glass p-6 rounded-xl hover:glass-strong transition-smooth"
               >
@@ -59,9 +60,9 @@ export default function Education() {
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
                       <div>
-                        <h3 className="text-xl font-bold text-primary">{edu.degree}</h3>
-                        <p className="text-lg font-semibold">{edu.institution}</p>
-                        <p className="text-muted-foreground">{edu.field}</p>
+                        <h3 className="text-xl font-bold text-primary">< GraduationCap className="inline w-4 h-4 mr-1 text-primary" /> {edu.degree}</h3>
+                        <p className="text-lg font-semibold"> <Building2 className="inline w-4 h-4 mr-1 text-primary" /> {edu.institution}</p>
+                        <p className="text-muted-foreground"><BookUser className="inline w-4 h-4 mr-1 text-primary" /> {edu.field}</p>
                       </div>
                       <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
                         <Calendar className="w-4 h-4" />
