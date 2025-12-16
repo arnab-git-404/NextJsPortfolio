@@ -52,23 +52,31 @@ export default function Navbar() {
   }, []);
 
   // Close mobile menu on scroll
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (isOpen) setIsOpen(false);
+  //   };
+
+  //   if (isOpen) {
+  //     window.addEventListener("scroll", handleScroll);
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "unset";
+  //   }
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //     document.body.style.overflow = "unset";
+  //   };
+  // }, [isOpen]);
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (isOpen) setIsOpen(false);
-    };
+  document.body.style.overflow = isOpen ? "hidden" : "unset";
+  return () => {
+    document.body.style.overflow = "unset";
+  };
+}, [isOpen]);
 
-    if (isOpen) {
-      window.addEventListener("scroll", handleScroll);
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -92,6 +100,7 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
         className="hidden md:block fixed top-6 left-0 right-0 z-50 px-4"
       >
         <div className="max-w-5xl mx-auto">
@@ -108,6 +117,7 @@ export default function Navbar() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              viewport={{ once: true }}
               onClick={() => scrollToSection("home")}
               className="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-primary/10 transition-all group"
             >
@@ -124,6 +134,7 @@ export default function Navbar() {
                 return (
                   <motion.button
                     key={item.href}
+                    viewport={{ once: true }}
                     onClick={() => scrollToSection(item.href)}
                     className={`
                       relative px-4 py-2 rounded-full text-sm font-medium
@@ -139,6 +150,7 @@ export default function Navbar() {
                   >
                     {activeSection === item.href && (
                       <motion.div
+                      viewport={{ once: true }}
                         layoutId="activeSection"
                         className="absolute inset-0 bg-primary rounded-full"
                         transition={{
@@ -239,7 +251,7 @@ export default function Navbar() {
         ? "glass-strong shadow-lg backdrop-blur-xl"
         : "bg-background/80 backdrop-blur-sm"
     }
-    rounded-4xl fixed z-50 md:hidden transition-all duration-300 mt-4 left-4 right-4
+    rounded-4xl fixed z-50 md:hidden transition-all duration-300 top-4 left-4 right-4
   `}
       >
         <div className="px-4">
@@ -248,6 +260,7 @@ export default function Navbar() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              viewport={{ once: true }}
               className="flex items-center gap-2"
               onClick={() => scrollToSection("home")}
             >
@@ -274,6 +287,7 @@ export default function Navbar() {
                       animate={{ rotate: 0, opacity: 1 }}
                       exit={{ rotate: 90, opacity: 0 }}
                       transition={{ duration: 0.2 }}
+                      viewport={{ once: true }}
                     >
                       <X className="w-9 h-9" />
                     </motion.div>
@@ -284,6 +298,7 @@ export default function Navbar() {
                       animate={{ rotate: 0, opacity: 1 }}
                       exit={{ rotate: -90, opacity: 0 }}
                       transition={{ duration: 0.2 }}
+                      viewport={{ once: true }}
                     >
                       <Menu className="w-9 h-9" />
                     </motion.div>
@@ -304,6 +319,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.3 }}
               className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
               onClick={() => setIsOpen(false)}
@@ -314,6 +330,7 @@ export default function Navbar() {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
+              viewport={{ once: true }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="fixed top-0 right-0 bottom-0 w-[280px] z-50 md:hidden glass-strong border-l border-border/50 shadow-2xl"
             >
@@ -344,6 +361,7 @@ export default function Navbar() {
                           key={item.href}
                           initial={{ opacity: 0, x: 20 }}
                           animate={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
                           transition={{ delay: index * 0.05 }}
                           onClick={() => scrollToSection(item.href)}
                           className={`
@@ -373,6 +391,7 @@ export default function Navbar() {
                                 bounce: 0.2,
                                 duration: 0.6,
                               }}
+                              viewport={{ once: true }}
                             />
                           )}
                         </motion.button>
@@ -384,7 +403,7 @@ export default function Navbar() {
                 {/* Footer */}
                 <div className="p-4 border-t border-border/50">
                   <div className="text-xs text-muted-foreground text-center">
-                    <p>© 2025 Portfolio</p>
+                    <p>© 2025 Arnab</p>
                     <p className="mt-1">Built with Next.js & Tailwind CSS</p>
                   </div>
                 </div>
