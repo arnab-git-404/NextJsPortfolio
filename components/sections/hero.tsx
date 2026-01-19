@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import FloatingLines from "@/components/FloatingLines";
 import ShinyText from "@/components/ShinyText";
 
-
 export default function Hero() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -55,15 +54,8 @@ export default function Hero() {
             viewport={{ once: true }}
             className="text-5xl md:text-7xl font-bold mb-4 text-primary"
           >
-            
-  
             Arnab Mukherjee
-            
           </motion.h1>
-
-
-
-
 
           {/* Role/Title */}
           <motion.h2
@@ -107,10 +99,16 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => scrollToSection("contact")}
+              asChild
               className="border-primary/50 hover:bg-primary/10 transition-smooth hover:scale-110 hover:cursor-pointer"
             >
-              Get In Touch
+              <a
+                href="/arnabMukherjee.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                My Resume
+              </a>
             </Button>
           </motion.div>
 
@@ -169,4 +167,3 @@ export default function Hero() {
     </section>
   );
 }
-
