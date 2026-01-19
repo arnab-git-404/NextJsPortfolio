@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FloatingLines from "@/components/FloatingLines";
-import ShinyText from "@/components/ShinyText";
+import Magnet from "../Magnet";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -63,9 +63,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-4xl font-semibold mb-6 text-muted-foreground"
+            className="text-xl md:text-4xl font-semibold mb-6 text-muted-foreground"
           >
-            MERN Stack Developer
+            {/* {`Full Stack Developer(MERN)`} */}
+            {/* camelCase Full Stack Developer */}
           </motion.h2>
 
           {/* Description */}
@@ -74,11 +75,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto"
           >
-            Full Stack Web Developer passionate about building beautiful,
-            functional, and user-friendly web applications using MongoDB,
-            Express.js, React, and Node.js.
+            Next.js Developer passionate about building beautiful, functional,
+            and user friendly web applications, who loves writing clean
+            <br /> code in <span className="text-primary font-semibold">camelCase</span> using MongoDB, Express.js, <br /> React,
+            and Tailwind CSS.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -96,20 +98,22 @@ export default function Hero() {
             >
               View My Work
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-primary/50 hover:bg-primary/10 transition-smooth hover:scale-110 hover:cursor-pointer"
-            >
-              <a
-                href="/arnabMukherjee.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+            <Magnet padding={300} disabled={false} magnetStrength={3}>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="border-primary/50 hover:bg-primary/10 transition-smooth hover:scale-110 hover:cursor-pointer"
               >
-                My Resume
-              </a>
-            </Button>
+                <a
+                  href="/arnabMukherjee.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  My Resume
+                </a>
+              </Button>
+            </Magnet>
           </motion.div>
 
           {/* Social Links */}
