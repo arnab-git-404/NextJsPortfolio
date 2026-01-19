@@ -7,6 +7,8 @@ import Education from "@/components/sections/education";
 import Contact from "@/components/sections/contact";
 import Footer from "@/components/footer";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   return (
     <div className="relative">

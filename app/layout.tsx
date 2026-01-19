@@ -12,23 +12,49 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | MERN Stack Developer",
+  title: "Arnab Mukherjee | Website Developer in Rampurhat, Birbhum | MERN Stack Developer",
   description:
-    "Full Stack Web Developer specializing in MERN stack. Showcasing projects, internship experience, and client work.",
+    "Professional Website Developer in Rampurhat, Birbhum. Full Stack MERN Developer offering web development services in Rampurhat and surrounding areas. Specializing in React, Node.js, MongoDB, and modern web applications.",
   keywords: [
-    "MERN Stack",
+    "website developer in Rampurhat",
+    "web developer Rampurhat",
+    "website developer Birbhum",
+    "web developer Birbhum",
+    "Rampurhat web developer",
+    "MERN Stack Developer Rampurhat",
+    "freelance web developer Rampurhat",
+    "website designer Rampurhat",
+    "React developer Rampurhat",
+    "Node.js developer Birbhum",
     "Full Stack Developer",
-    "React",
-    "Node.js",
+    "MERN Stack",
     "MongoDB",
     "Express",
-    "Web Developer",
+    "React",
+    "Node.js",
   ],
-  authors: [{ name: "Arnab Mukherjee | Rampurhat | Website Developer" }],
+  authors: [{ name: "Arnab Mukherjee" }],
+  creator: "Arnab Mukherjee",
+  publisher: "Arnab Mukherjee",
   openGraph: {
-    title: "Portfolio | MERN Stack Developer",
-    description: "Full Stack Web Developer specializing in MERN stack",
+    title: "Arnab Mukherjee | Website Developer in Rampurhat, Birbhum",
+    description: "Professional Website Developer in Rampurhat, Birbhum specializing in MERN Stack development",
     type: "website",
+    locale: "en_IN",
+    siteName: "Arnab Mukherjee Portfolio",
+  },
+  alternates: {
+    canonical: "https://mukherjeearnab.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -43,6 +69,31 @@ export default function RootLayout({
       suppressHydrationWarning
       style={{ scrollBehavior: "smooth" }}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Arnab Mukherjee",
+              jobTitle: "Full Stack Web Developer",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Rampurhat",
+                addressRegion: "Birbhum",
+                addressCountry: "IN"
+              },
+              url: "https://mukherjeearnab.vercel.app",
+              description: "Professional Website Developer in Rampurhat, Birbhum specializing in MERN Stack",
+              sameAs: [
+                "https://github.com/arnab-git-404",
+                "https://linkedin.com/in/0xarnab"
+              ]
+            })
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} font-sans antialiased`}
         style={{
