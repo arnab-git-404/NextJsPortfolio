@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useRef, ReactNode, HTMLAttributes } from 'react';
 
 interface MagnetProps extends HTMLAttributes<HTMLDivElement> {
@@ -27,7 +29,7 @@ const Magnet: React.FC<MagnetProps> = ({
   const magnetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (disabled) {
+    if (disabled || typeof window === 'undefined') {
       setPosition({ x: 0, y: 0 });
       return;
     }

@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FloatingLines from "@/components/FloatingLines";
-import Magnet from "../Magnet";
+import dynamic from "next/dynamic";
+
+const Magnet = dynamic(() => import("@/components/Magnet"), { ssr: false });
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
