@@ -4,7 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navigation/navbar";
 import { ReactLenis, useLenis } from "lenis/react";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import PageLoadTime from "@/components/PageLoadTime";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,7 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Arnab Mukherjee | Website Developer in Rampurhat, Birbhum | MERN Stack Developer",
+  title:
+    "Arnab Mukherjee | Website Developer in Rampurhat, Birbhum | MERN Stack Developer",
   description:
     "Professional Website Developer in Rampurhat, Birbhum. Full Stack MERN Developer offering web development services in Rampurhat and surrounding areas. Specializing in React, Node.js, MongoDB, and modern web applications.",
   keywords: [
@@ -38,7 +40,8 @@ export const metadata: Metadata = {
   publisher: "Arnab Mukherjee",
   openGraph: {
     title: "Arnab Mukherjee | Website Developer in Rampurhat, Birbhum",
-    description: "Professional Website Developer in Rampurhat, Birbhum specializing in MERN Stack development",
+    description:
+      "Professional Website Developer in Rampurhat, Birbhum specializing in MERN Stack development",
     type: "website",
     locale: "en_IN",
     siteName: "Arnab Mukherjee Portfolio",
@@ -52,8 +55,8 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
@@ -82,15 +85,16 @@ export default function RootLayout({
                 "@type": "PostalAddress",
                 addressLocality: "Rampurhat",
                 addressRegion: "Birbhum",
-                addressCountry: "IN"
+                addressCountry: "IN",
               },
               url: "https://mukherjeearnab.vercel.app",
-              description: "Professional Website Developer in Rampurhat, Birbhum specializing in MERN Stack",
+              description:
+                "Professional Website Developer in Rampurhat, Birbhum specializing in MERN Stack",
               sameAs: [
                 "https://github.com/arnab-git-404",
-                "https://linkedin.com/in/0xarnab"
-              ]
-            })
+                "https://linkedin.com/in/0xarnab",
+              ],
+            }),
           }}
         />
       </head>
@@ -108,9 +112,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* <ReactLenis root /> */}
-          <Analytics/>
+          <Analytics />
           <Navbar />
           {children}
+          <PageLoadTime />
         </ThemeProvider>
       </body>
     </html>
