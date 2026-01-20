@@ -1,11 +1,13 @@
+import nextDynamic from "next/dynamic";
 import Hero from "@/components/sections/hero";
-import About from "@/components/sections/about";
-import Skills from "@/components/sections/skills";
-import Experience from "@/components/sections/experience";
-import Projects from "@/components/sections/projects";
-import Education from "@/components/sections/education";
-import Contact from "@/components/sections/contact";
 import Footer from "@/components/footer";
+
+const About = nextDynamic(() => import("@/components/sections/about"));
+const Skills = nextDynamic(() => import("@/components/sections/skills"));
+const Experience = nextDynamic(() => import("@/components/sections/experience"));
+const Projects = nextDynamic(() => import("@/components/sections/projects"));
+const Education = nextDynamic(() => import("@/components/sections/education"));
+const Contact = nextDynamic(() => import("@/components/sections/contact"));
 
 export const dynamic = "force-static";
 
