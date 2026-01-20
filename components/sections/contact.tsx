@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useInView } from "react-intersection-observer";
 import { Textarea } from "@/components/ui/textarea";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 
 
