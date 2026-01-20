@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navigation/navbar";
-import { ReactLenis, useLenis } from "lenis/react";
 import { Analytics } from "@vercel/analytics/next";
 import PageLoadTime from "@/components/PageLoadTime";
 
