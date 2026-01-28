@@ -14,7 +14,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 
 const navItems = [
   { name: "Home", href: "home", icon: Home },
@@ -171,7 +171,7 @@ export default function Navbar() {
 
             {/* Theme Toggle */}
             <div className="px-2">
-              <ThemeToggle />
+              <AnimatedThemeToggler />
             </div>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function Navbar() {
 
             
             <div className="flex items-center gap-2">
-              <ThemeToggle />
+              <AnimatedThemeToggler />
               <Button
                 variant="ghost"
                 size="icon"
@@ -272,7 +272,7 @@ export default function Navbar() {
 
             {/* Mobile Actions */}
             <div className="flex items-center gap-2">
-              <ThemeToggle />
+              <AnimatedThemeToggler />
               <Button
                 variant="ghost"
                 size="icon"
